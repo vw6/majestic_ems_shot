@@ -124,26 +124,6 @@ Discord режет крупные вложения, поэтому:
 
 ---
 
-## Сборка из исходников
-
-Нужен **.NET SDK 8+** (https://dotnet.microsoft.com/download/dotnet/8.0).
-
-```bat
-build.bat
-```
-
-или вручную:
-
-```bat
-dotnet publish -c Release -r win-x64 --self-contained true ^
-  -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true ^
-  -p:EnableCompressionInSingleFile=true -p:DebugType=none -o publish
-```
-
-Готовый `publish\MajesticEmsShot.exe` самодостаточен.
-
----
-
 ## Лицензия и авторство
 
 Автор: **.foodoch**. По вопросам и предложениям — Discord `.foodoch`
